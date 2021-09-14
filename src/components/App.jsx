@@ -1,5 +1,6 @@
 import React from 'react';
-import { BrowserRouter, Route, Switch, Link } from 'react-router-dom'
+import { BrowserRouter, Route, Switch, NavLink, Link } from 'react-router-dom'
+import { useLocation } from 'react-router-dom'
 
 // Navbar
 import Container from 'react-bootstrap/Container'
@@ -31,6 +32,7 @@ function App() {
         }
     });
 
+
     return (
         <BrowserRouter>
             <div>
@@ -54,8 +56,8 @@ function App() {
                             <Navbar.Collapse id="basic-navbar-nav">
                                 <Nav className="ms-auto navList"> {/* ms-auto right aligns the nav links */}
                                     {/* TO DO: Add "active" class to the Nav.Links dynamically */}
-                                    <Nav.Link as={Link} to="/" className="navLink">Home</Nav.Link>
-                                    <Nav.Link as={Link} to="/officers" className="navLink">Officers</Nav.Link>
+                                    <NavLink to="/" className="navLink" exact activeClassName="navLinkActive">Home</NavLink>
+                                    <NavLink to="/officers" className="navLink" exact activeClassName="navLinkActive">Officers</NavLink>
                                 </Nav>
                             </Navbar.Collapse>
                         </Container>

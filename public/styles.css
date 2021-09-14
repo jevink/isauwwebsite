@@ -42,10 +42,20 @@ p {
 	font-size: calc(0.4vw + 12px);
 	text-shadow: darkslategray 1px 1px 0.2rem;
 }
-/* Spacing between Navbar items */
 .navLink {
+	text-decoration: none;
 	padding-left: 32px !important;
+	color: rgba(255,255,255,.70);
 }
+
+.navLink:hover {
+	color: rgba(255,255,255,1);
+}
+.navLinkActive {
+	color: rgba(255,255,255,1);
+	text-shadow: 1px 1px 25px rgba(255,255,255,.50);
+}
+
 
 /* Carousel Size */
 .carousel .carousel-inner {
