@@ -44,7 +44,9 @@ function App() {
                         <Container>
                             {/* ISAUW Brand */}
                             <Navbar.Brand href="#home">
-                                <img alt="isauwlogo-white" src="images/isauwlogo-white.png" style={{ height: "56px" }} />
+                                <Link to="/">
+                                    <img alt="isauwlogo-white" src="images/isauwlogo-white.png" style={{ height: "56px" }} />
+                                </Link>
                             </Navbar.Brand>
 
                             {/* Collapses to a hamburger menu at the expand="lg" breakpoint */}
