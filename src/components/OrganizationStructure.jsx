@@ -95,7 +95,7 @@ function OrganizationStructure() {
     return (
         <section className="my-5">
             <div className="mx-auto row">
-                <h1 className="my-3 text-center divBtmMargin"><strong>2021-2022 Organization Structure</strong></h1>
+                <h1 className="my-3 text-center divMargin"><strong>2021 Organization Structure</strong></h1>
                 <Tree
                     label={<OrganizationCard position="President" name="Amy Dharmawan" image="https://picsum.photos/500" />}
                     lineHeight={"32px"}

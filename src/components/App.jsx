@@ -1,6 +1,5 @@
 import React from 'react';
 import { BrowserRouter, Route, Switch, NavLink, Link } from 'react-router-dom'
-import { useLocation } from 'react-router-dom'
 
 // Navbar
 import Container from 'react-bootstrap/Container'
@@ -65,37 +64,37 @@ function App() {
 
                     {/* Carousel */}
                     <Carousel style={{ height: "calc(50vh + 10vw)" }}>
-                        <Carousel.Item>
+                        <Carousel.Item interval={5000}>
                             <img
                                 className="d-block w-100"
                                 src="https://picsum.photos/2000"
                                 alt=""
                             />
-                            <Carousel.Caption style={{ bottom: "20%", letterSpacing: "10pt" }}>
+                            <Carousel.Caption style={{ bottom: "18%", letterSpacing: "10pt" }}>
                                 <div className="animated fadeInDown">
                                     <h1 className="carouselCaption">SEATTLE 101</h1>
                                 </div>
                             </Carousel.Caption>
                         </Carousel.Item>
-                        <Carousel.Item>
+                        <Carousel.Item interval={5000}>
                             <img
                                 className="d-block w-100"
                                 src="https://picsum.photos/2200"
                                 alt=""
                             />
-                            <Carousel.Caption style={{ bottom: "20%", letterSpacing: "10pt" }}>
+                            <Carousel.Caption style={{ bottom: "18%", letterSpacing: "10pt" }}>
                                 <div className="animated fadeInDown">
                                     <h1 className="carouselCaption">KERATON</h1>
                                 </div>
                             </Carousel.Caption>
                         </Carousel.Item>
-                        <Carousel.Item>
+                        <Carousel.Item interval={5000}>
                             <img
                                 className="d-block w-100"
                                 src="https://picsum.photos/2400"
                                 alt=""
                             />
-                            <Carousel.Caption style={{ bottom: "20%", letterSpacing: "10pt" }}>
+                            <Carousel.Caption style={{ bottom: "18%", letterSpacing: "10pt" }}>
                                 <div className="animated fadeInDown">
                                     <h1 className="carouselCaption">SANTAPAN</h1>
                                 </div>
