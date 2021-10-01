@@ -5,12 +5,11 @@ import { BrowserRouter, Route, Switch, NavLink, Link } from 'react-router-dom'
 import Container from 'react-bootstrap/Container'
 import Nav from 'react-bootstrap/Nav'
 import Navbar from 'react-bootstrap/Navbar'
-
-// Carousel
-import Carousel from 'react-bootstrap/Carousel';
+import Alert from 'react-bootstrap/Alert'
 
 import Home from './Home';
-import OrganizationStrcuture from './OrganizationStructure'
+import Officers from './Officers'
+import Events from './Events'
 
 import Footer from './Footer';
 
@@ -31,6 +30,19 @@ function App() {
         }
     });
 
+    const [showPopUp, setShowPopUp] = React.useState(true);
+    function renderPopUp() {
+        if (showPopUp) {
+            return (
+                <Alert className="alert-fixed"
+                    variant="dark"
+                    onClose={() => setShowPopUp(false)}
+                    dismissible
+                    closeVariant="white">
+                </Alert>
+            );
+        }
+    }
 
     return (
         <BrowserRouter>
@@ -46,67 +58,30 @@ function App() {
                             {/* ISAUW Brand */}
                             <Navbar.Brand href="#home">
                                 <Link to="/">
-                                    <img alt="isauwlogo-white" src="images/isauwlogo-white.png" style={{ height: "56px" }} />
+                                    <img alt="isauwlogo-white" src="images/isauwlogo-white.png" className="isauw-logo" />
                                 </Link>
                             </Navbar.Brand>
 
                             {/* Collapses to a hamburger menu at the expand="lg" breakpoint */}
-                            <Navbar.Toggle className="gay" aria-controls="basic-navbar-nav" />
+                            <Navbar.Toggle className="hamburger" aria-controls="basic-navbar-nav" />
                             <Navbar.Collapse id="basic-navbar-nav">
                                 <Nav className="ms-auto navList"> {/* ms-auto right aligns the nav links */}
-                                    {/* TO DO: Add "active" class to the Nav.Links dynamically */}
                                     <NavLink to="/" className="navLink" exact activeClassName="navLinkActive">Home</NavLink>
                                     <NavLink to="/officers" className="navLink" exact activeClassName="navLinkActive">Officers</NavLink>
+                                    <NavLink to="/events" className="navLink" exact activeClassName="navLinkActive">Events</NavLink>
                                 </Nav>
                             </Navbar.Collapse>
                         </Container>
                     </Navbar>
-
-                    {/* Carousel */}
-                    <Carousel style={{ height: "calc(50vh + 10vw)" }}>
-                        <Carousel.Item interval={5000}>
-                            <img
-                                className="d-block w-100"
-                                src="https://picsum.photos/2000"
-                                alt=""
-                            />
-                            <Carousel.Caption style={{ bottom: "18%", letterSpacing: "10pt" }}>
-                                <div className="animated fadeInDown">
-                                    <h1 className="carouselCaption">SEATTLE 101</h1>
-                                </div>
-                            </Carousel.Caption>
-                        </Carousel.Item>
-                        <Carousel.Item interval={5000}>
-                            <img
-                                className="d-block w-100"
-                                src="https://picsum.photos/2200"
-                                alt=""
-                            />
-                            <Carousel.Caption style={{ bottom: "18%", letterSpacing: "10pt" }}>
-                                <div className="animated fadeInDown">
-                                    <h1 className="carouselCaption">KERATON</h1>
-                                </div>
-                            </Carousel.Caption>
-                        </Carousel.Item>
-                        <Carousel.Item interval={5000}>
-                            <img
-                                className="d-block w-100"
-                                src="https://picsum.photos/2400"
-                                alt=""
-                            />
-                            <Carousel.Caption style={{ bottom: "18%", letterSpacing: "10pt" }}>
-                                <div className="animated fadeInDown">
-                                    <h1 className="carouselCaption">SANTAPAN</h1>
-                                </div>
-                            </Carousel.Caption>
-                        </Carousel.Item>
-                    </Carousel>
                 </header>
 
                 <Switch>
                     <Route path="/" exact component={Home} />
-                    <Route path="/officers" component={OrganizationStrcuture} />
+                    <Route path="/officers" component={Officers} />
+                    <Route path="/events" component={Events} />
                 </Switch>
+
+                {renderPopUp()}
 
                 <Footer />
 

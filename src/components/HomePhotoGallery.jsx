@@ -1,10 +1,9 @@
 import React from 'react';
 import Photo from './Photo';
 
-function PhotoGallery() {
+function HomePhotoGallery() {
     return (
-        <section className="my-5" id="homegallery">
-
+        <section className="my-5">
             {/* First row */}
             <div className="row">
                 <div className="col-md-4 mb-3 fadeInLeft">
@@ -27,9 +26,8 @@ function PhotoGallery() {
                     <Photo imageSource="https://picsum.photos/1400" />
                 </div>
             </div>
-
         </section>
     );
 }
 
-export default PhotoGallery;
+export default HomePhotoGallery;

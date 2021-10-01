@@ -1,8 +1,9 @@
 import React from "react";
 import { Tree, TreeNode } from "react-organizational-chart";
+import AboutUs from "./AboutUs";
 import OrganizationCard from "./OrganizationCard";
 
-function OrganizationStructure() {
+function Officers() {
 
     const [isSelected, setSelected] = React.useState({
         operations: false,
@@ -93,26 +94,29 @@ function OrganizationStructure() {
     }
 
     return (
-        <section className="my-5">
-            <div className="mx-auto row">
-                <h1 className="my-3 text-center divMargin"><strong>2021 Organization Structure</strong></h1>
-                <Tree
-                    label={<OrganizationCard position="President" name="Amy Dharmawan" image="https://picsum.photos/500" />}
-                    lineHeight={"32px"}
-                    lineWidth={"2px"}
-                    lineColor={"#811B16"}
-                    lineBorderRadius={"10px"}
-                >
-                    <TreeNode label={<OrganizationCard position="Vice President" name="Jasmine Laksmana" image="https://picsum.photos/500" />}>
-                        {renderOperationsTree(isSelected.operations)}
-                        {renderFinanceTree(isSelected.finance)}
-                        {renderCommunicationsTree(isSelected.communications)}
-                    </TreeNode>
-                </Tree>
+        <div>
+            <AboutUs />
 
-            </div>
-        </section>
+            <section className="my-5">
+                <div className="mx-auto row">
+                    <h1 className="my-3 text-center div-margin-btm"><strong>2021-22 Organization Structure</strong></h1>
+                    <Tree
+                        label={<OrganizationCard position="President" name="Amy Dharmawan" image="https://picsum.photos/500" />}
+                        lineHeight={"32px"}
+                        lineWidth={"2px"}
+                        lineColor={"#811B16"}
+                        lineBorderRadius={"10px"}
+                    >
+                        <TreeNode label={<OrganizationCard position="Vice President" name="Jasmine Laksmana" image="https://picsum.photos/500" />}>
+                            {renderOperationsTree(isSelected.operations)}
+                            {renderFinanceTree(isSelected.finance)}
+                            {renderCommunicationsTree(isSelected.communications)}
+                        </TreeNode>
+                    </Tree>
+                </div>
+            </section>
+        </div>
     );
 };
 
-export default OrganizationStructure;
+export default Officers;

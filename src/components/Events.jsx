@@ -1,13 +1,12 @@
 import Container from 'react-bootstrap/Container'
 import Carousel from 'react-bootstrap/Carousel';
-import VisionMission from './VisionMission';
-import HomePhotoGallery from './HomePhotoGallery';
+import EventsPhotoGallery from './EventsPhotoGallery';
 
-function Home() {
+function Events() {
     return (
         <div>
             {/* Carousel */}
-            <Carousel style={{ height: "calc(50vh + 10vw)" }}>
+            <Carousel touch={true} style={{ height: "calc(50vh + 10vw)" }}>
                 <Carousel.Item interval={4000}>
                     <img
                         className="d-block w-100"
@@ -47,11 +46,10 @@ function Home() {
             </Carousel>
 
             < Container >
-                <VisionMission />
-                <HomePhotoGallery />
+                <EventsPhotoGallery />
             </Container>
         </div>
     )
 }
 
-export default Home;
+export default Events;

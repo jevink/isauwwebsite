@@ -8,16 +8,16 @@ function Footer() {
         <footer className="page-footer text-center">
             {/* Social Icons */}
             <div className="py-4 mx-auto">
-                <a className="socialIcon" href="http://www.facebook.com/isauw.huskies">
+                <a className="social-icon" href="http://www.facebook.com/isauw.huskies">
                     <i className="fa fa-2x fa-facebook"></i>
                 </a>
-                <a className="socialIcon" href="http://instagram.com/isauwhuskies">
+                <a className="social-icon" href="http://instagram.com/isauwhuskies">
                     <i className="fa fa-2x fa-instagram"></i>
                 </a>
-                <a className="socialIcon" href="http://www.youtube.com/user/isauwHuskies">
+                <a className="social-icon" href="http://www.youtube.com/user/isauwHuskies">
                     <i className="fa fa-2x fa-youtube"></i>
                 </a>
-                <a className="socialIcon" href="mailto:isauw@uw.edu">
+                <a className="social-icon" href="mailto:isauw@uw.edu">
                     <i className="fa fa-2x fa-envelope-o"></i>
                 </a>
             </div>
@@ -30,7 +30,7 @@ function Footer() {
                     <a style={{ marginLeft: "12px" }} href="https://www.washington.edu/online/terms" className="text-decoration-none">Terms</a>
                 </div>
                 <div>
-                    <a href="#home" className="text-decoration-none copyright">© {year} Indonesian Student Association at University of Washington | Seattle, WA</a>
+                    <p className="copyright">© {year} Indonesian Student Association at University of Washington | Seattle, WA</p>
                 </div>
             </div>
         </footer>
