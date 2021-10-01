@@ -378,14 +378,3 @@ div:not(.slick-disabled)>i:hover {
 .slick-slider.carousel-center-mode.slick-initialized {
 	position: relative;
 }
-
-.test {
-	height: 100%;
-	margin-top: 24px;
-	margin-bottom: 24px;
-	-moz-transform: scale(1, 0.9);
-	-ms-transform: scale(1, 0.9);
-	-o-transform: scale(1, 0.9);
-	-webkit-transform: scale(1, 0.9);
-	transform: scale(1, 0.9);
-}

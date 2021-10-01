@@ -74,7 +74,7 @@ function EventsPhotoGallery() {
     const otherSettings = {
         centerMode: true,
         centerPadding: 0,
-        slidesToShow: 3,
+        slidesToShow: 4,
         swipeToSlide: true,
         infinite: true,
         className: "carousel-center-mode",
@@ -83,13 +83,13 @@ function EventsPhotoGallery() {
             {
                 breakpoint: 1024,
                 settings: {
-                    slidesToShow: 2,
+                    slidesToShow: 3,
                 }
             },
             {
-                breakpoint: 480,
+                breakpoint: 768,
                 settings: {
-                    slidesToShow: 1,
+                    slidesToShow: 2,
                 }
             }
         ],
@@ -116,14 +116,17 @@ function EventsPhotoGallery() {
             <section className="my-5 div-margin-top">
                 <h1><strong>Past Events</strong></h1>
 
-                <div className="row">
-                    <div className="col-sm-4 col-6" style={{ paddingRight: "0" }} >
-                        <div className="test">
-                            <p className="events-card-title">{"Event title"}</p>
-                            <p className="events-card-text">{"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."}</p>
+                <div>
+                    <div style={{ paddingRight: "0" }} >
+                        <div>
+                            <p className="events-card-title">{"KERATON"}</p>
                         </div>
+                        <div>
+                            <p className="events-card-text">{"October 1, 2021"}</p>
+                        </div>
+
                     </div>
-                    <div className="col-sm-8 col-6">
+                    <div>
                         <Slider {...otherSettings}>
                             <div className="event-img-div">
                                 <img src="https://picsum.photos/2200" className="img-fluid event-img"></img>
@@ -141,6 +144,9 @@ function EventsPhotoGallery() {
                                 <img src="https://picsum.photos/2200" className="img-fluid event-img"></img>
                             </div>
                         </Slider>
+                    </div>
+                    <div style={{ paddingRight: "0" }} >
+                        <p className="events-card-text">{"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."}</p>
                     </div>
                 </div>
             </section >
