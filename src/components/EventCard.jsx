@@ -8,8 +8,8 @@ function EventCard(props) {
                 <Card.Img variant="top" src="https://picsum.photos/2000" style={{ borderRadius: "16px 16px 0 0" }} />
                 <div className="row" style={{ margin: "10px", height: "inherit" }}>
                     <div className="col-2 text-center " style={{ padding: "0", margin: "auto" }}>
-                        <p className="events-month">{props.month}</p>
-                        <p className="events-date">{props.date}</p>
+                        <p className="upcoming-events-month">{props.month}</p>
+                        <p className="upcoming-events-date">{props.date}</p>
                     </div>
                     <div class="col-10" style={{ padding: "0px 0px 0px 12px" }}>
                         <h3 className="events-card-title">{props.title}</h3>
