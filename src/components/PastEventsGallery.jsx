@@ -53,7 +53,7 @@ function PastEventsGallery() {
     return (
         <section className="my-5 div-margin-top">
 
-            <h1 style={{ marginBottom: "0" }}><strong >Past Events</strong></h1>
+            <h1 style={{ paddingTop: "1rem", marginBottom: "0" }}><strong >Past Events</strong></h1>
 
             <div style={{ height: "100%", padding: `calc(2.4vw + 24px) 0 calc(0.8vw + 8px)` }}>
                 <div>
