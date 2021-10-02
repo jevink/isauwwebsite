@@ -27,7 +27,7 @@ function PastEventsGallery() {
     const settings = {
         centerMode: true,
         centerPadding: 0,
-        slidesToShow: 4,
+        slidesToShow: 3,
         swipeToSlide: true,
         infinite: true,
         className: "carousel-center-mode",
@@ -36,13 +36,13 @@ function PastEventsGallery() {
             {
                 breakpoint: 1024,
                 settings: {
-                    slidesToShow: 3,
+                    slidesToShow: 2,
                 }
             },
             {
                 breakpoint: 576,
                 settings: {
-                    slidesToShow: 2,
+                    slidesToShow: 1,
                 }
             }
         ],
