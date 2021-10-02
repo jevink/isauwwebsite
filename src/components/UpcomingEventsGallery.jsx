@@ -54,15 +54,19 @@ function UpcomingEventsGallery() {
 
     return (
         <section className="my-5 div-margin-btm">
-            <h1><strong>Upcoming Events</strong></h1>
-            {/* Past Events */}
-            <Slider {...settings}>
-                <EventCard month="JAN" date="01" title="Event Title" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel turpis ac est eleifend imperdiet. " />
-                <EventCard month="JAN" date="02" title="Event Title" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel turpis ac est eleifend imperdiet. " />
-                <EventCard month="JAN" date="03" title="Event Title" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel turpis ac est eleifend imperdiet. " />
-                <EventCard month="JAN" date="04" title="Event Title" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel turpis ac est eleifend imperdiet. " />
-                <EventCard month="JAN" date="05" title="Event Title" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. " />
-            </Slider>
+            <div className="row">
+                <div className="col-12">
+                    <h1 className="my-3"><strong>Upcoming Events</strong></h1>
+                    {/* Past Events */}
+                    <Slider {...settings}>
+                        <EventCard month="JAN" date="01" title="Event Title" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel turpis ac est eleifend imperdiet. " />
+                        <EventCard month="JAN" date="02" title="Event Title" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel turpis ac est eleifend imperdiet. " />
+                        <EventCard month="JAN" date="03" title="Event Title" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel turpis ac est eleifend imperdiet. " />
+                        <EventCard month="JAN" date="04" title="Event Title" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel turpis ac est eleifend imperdiet. " />
+                        <EventCard month="JAN" date="05" title="Event Title" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. " />
+                    </Slider>
+                </div>
+            </div>
         </section >
     );
 }
