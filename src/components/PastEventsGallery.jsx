@@ -4,14 +4,35 @@ import Card from 'react-bootstrap/Card';
 
 
 function PastEventsGallery() {
+    // function PastEventsNextArrow(props) {
+    //     const { className, style, onClick } = props;
+    //     return (
+    //         <div
+    //             className={className}
+    //             style={{ ...style, display: "inline-block", color: "rgba(0,0,0,0.5)", width: "auto", height: "auto", top: `calc((1vw + 16px)* -1)`, right: "1vw", zIndex: "99" }}
+    //             onClick={onClick}
+    //         ><i className="fas fa-arrow-right  slick-past-events-button"></i></div>
+    //     );
+    // }
+    // function PastEventsPrevArrow(props) {
+    //     const { className, style, onClick } = props;
+    //     return (
+    //         <div
+    //             className={className}
+    //             style={{ ...style, display: "inline-block", color: "rgba(0,0,0,0.5)", width: "auto", height: "auto", top: `calc((1vw + 16px)* -1)`, left: "auto", right: `calc(3vw + 24px)`, zIndex: "99" }}
+    //             onClick={onClick}
+    //         ><i className="fas fa-arrow-left  slick-past-events-button"></i></div>
+    //     );
+    // }
     function PastEventsNextArrow(props) {
         const { className, style, onClick } = props;
         return (
             <div
                 className={className}
-                style={{ ...style, display: "inline-block", color: "rgba(0,0,0,0.5)", width: "auto", height: "auto", top: `calc((1vw + 16px)* -1)`, right: "1vw", zIndex: "99" }}
+                style={{ ...style, display: "block", color: "rgba(0,0,0,0.5)", width: "auto", height: "auto" }}
                 onClick={onClick}
-            ><i className="fas fa-arrow-right  slick-past-events-button"></i></div>
+                isDisabled={className?.includes("slick-disabled")}
+            ><i className="fas fa-angle-right slick-upcoming-events-button"></i></div>
         );
     }
     function PastEventsPrevArrow(props) {
@@ -19,9 +40,10 @@ function PastEventsGallery() {
         return (
             <div
                 className={className}
-                style={{ ...style, display: "inline-block", color: "rgba(0,0,0,0.5)", width: "auto", height: "auto", top: `calc((1vw + 16px)* -1)`, left: "auto", right: `calc(3vw + 24px)`, zIndex: "99" }}
+                style={{ ...style, display: "block", color: "rgba(0,0,0,0.5)", width: "auto", height: "auto" }}
                 onClick={onClick}
-            ><i className="fas fa-arrow-left  slick-past-events-button"></i></div>
+                isDisabled={className?.includes("slick-disabled")}
+            ><i className="fas fa-angle-left slick-upcoming-events-button"></i></div>
         );
     }
     const settings = {
