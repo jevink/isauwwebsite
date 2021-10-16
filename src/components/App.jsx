@@ -45,7 +45,7 @@ function App() {
     }
 
     return (
-        <BrowserRouter>
+        <BrowserRouter basename="/isauw">
             <div>
                 <section id="preloader">
                     <img alt="isauwbird" src="images/isauwbird-red.png" />

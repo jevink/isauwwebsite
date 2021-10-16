@@ -1,5 +1,5 @@
 import React from 'react';
-import EventCard from './EventCard';
+import UpcomingEventsCard from './UpcomingEventsCard';
 import Slider from 'react-slick';
 
 function UpcomingEventsGallery() {
@@ -36,15 +36,15 @@ function UpcomingEventsGallery() {
         swipeToSlide: true,
         responsive: [
             {
-                breakpoint: 768,
+                breakpoint: 992,
                 settings: {
                     slidesToShow: 2,
                 }
             },
             {
-                breakpoint: 480,
+                breakpoint: 576,
                 settings: {
-                    slidesToShow: 1,
+                    slidesToShow: 1.08,
                 }
             }
         ],
@@ -56,14 +56,14 @@ function UpcomingEventsGallery() {
         <section className="my-5 div-margin-btm">
             <div className="row">
                 <div className="col-12">
-                    <h1 className="my-3"><strong>Upcoming Events</strong></h1>
+                    <h1 className="my-3" style={{ paddingLeft: `calc(0.4vw + 1.5px)` }}><strong>Upcoming Events</strong></h1>
                     {/* Past Events */}
                     <Slider {...settings}>
-                        <EventCard month="JAN" date="01" title="Event Title" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel turpis ac est eleifend imperdiet. " />
-                        <EventCard month="JAN" date="02" title="Event Title" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel turpis ac est eleifend imperdiet. " />
-                        <EventCard month="JAN" date="03" title="Event Title" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel turpis ac est eleifend imperdiet. " />
-                        <EventCard month="JAN" date="04" title="Event Title" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel turpis ac est eleifend imperdiet. " />
-                        <EventCard month="JAN" date="05" title="Event Title" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. " />
+                        <UpcomingEventsCard month="JAN" date="01" title="KERATON" img="https://picsum.photos/2000" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel turpis ac est eleifend imperdiet." />
+                        <UpcomingEventsCard month="JAN" date="02" title="KERATON" img="https://picsum.photos/1800" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel turpis ac est eleifend imperdiet." />
+                        <UpcomingEventsCard month="JAN" date="03" title="KERATON" img="https://picsum.photos/1600" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel turpis ac est eleifend imperdiet." />
+                        <UpcomingEventsCard month="JAN" date="04" title="KERATON" img="https://picsum.photos/1400" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel turpis ac est eleifend imperdiet." />
+                        <UpcomingEventsCard month="JAN" date="05" title="KERATON" img="https://picsum.photos/1200" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit." />
                     </Slider>
                 </div>
             </div>

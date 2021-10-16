@@ -48,11 +48,14 @@ function Events() {
 
             < Container >
                 <UpcomingEventsGallery />
+
+                {/* Apply Now Jumbotron */}
                 <div className="jumbotron" style={{ borderRadius: "16px", backgroundImage: `url("https://picsum.photos/2400")`, padding: `calc(1.8vw + 24px)`, marginTop: `calc(1vw + 60px)` }}>
                     <h1 className="display-4" style={{ fontWeight: "bold", color: "white", textShadow: "black 0.1em 0.1em 0.2em" }} >We're hiring.</h1>
                     <p className="events-card-text" style={{ color: "white", textShadow: "black 0.1em 0.1em 0.2em" }}>This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
                     <a className="btn btn-md btn-dark" style={{ fontWeight: "600", fontSize: `calc(0.6vw + 10px)`, textTransform: "none", color: "white", marginTop: `calc(1vw + 24px)` }} href="#" role="button">Apply now</a>
                 </div>
+
                 <PastEventsGallery />
             </Container >
         </div >
