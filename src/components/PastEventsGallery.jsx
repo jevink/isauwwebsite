@@ -48,7 +48,7 @@ function PastEventsGallery() {
 
     return (
         <section className="my-5 div-margin-top">
-            <h1 className="past-events-title"><strong >Past Events</strong></h1>
+            <h1 className="h1-past-events"><strong >Past Events</strong></h1>
 
             <PastEventsCard title="KERATON" date="SAT, OCT 2 2021" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat." settings={settings} />
             <hr />

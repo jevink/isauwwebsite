@@ -23,10 +23,11 @@ function PastEventsCard(props) {
                     </div>
                 </Slider>
             </div>
+
             <div className="mx-auto past-events-content">
-                <p className="events-card-date">{props.date}</p>
-                <p className="events-card-title">{props.title}</p>
-                <p className="events-card-text">{props.text}</p>
+                <p className="past-events-date">{props.date}</p>
+                <p className="events-title">{props.title}</p>
+                <p className="past-events-text">{props.text}</p>
             </div>
         </div >
     );

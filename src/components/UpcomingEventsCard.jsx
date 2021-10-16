@@ -3,44 +3,43 @@ import Card from 'react-bootstrap/Card';
 
 function UpcomingEventsCard(props) {
     return (
-        <div style={{ padding: "0.6vw", height: "100%" }}>
-            <Card style={{ borderRadius: "16px", height: "100%" }}>
-                <div className="div-gradient">
+        <div style={{ padding: "0.6vw" }}>
+            <Card style={{ borderRadius: "16px" }}>
+                <div className="upcoming-events-overlay">
                     {/* Event Image */}
                     <Card.Img variant="top" src={props.img} style={{ borderRadius: "16px" }} />
 
                     {/* Text and dark filter overlay on top of image */}
-                    <div className="div-overlay">
-                        <div className="row" style={{ margin: "10px", height: "inherit" }}>
-
+                    <div className="upcoming-events-content">
+                        <div className="row" style={{ margin: "10px" }}>
                             {/* Event Date */}
-                            <div className="text-center div-events-card-date">
+                            <div className="text-center div-upcoming-events-date">
                                 <p className="upcoming-events-month">{props.month}</p>
                                 <p className="upcoming-events-date">{props.date}</p>
                             </div>
 
-                            <div className="div-events-card-content">
+                            <div className="div-upcoming-events-content">
                                 {/* Event Name */}
-                                <h3 className="events-card-title">{props.title}</h3>
+                                <h3 className="events-title">{props.title}</h3>
 
                                 {/* Time and Location */}
                                 <div className="align-middle align-self-center" style={{ display: "flex", flex: "1" }}>
                                     <div className="align-self-center align-middle no-hover">
-                                        <i className="fas fa-clock events-card-icon"></i>
+                                        <i className="fas fa-clock upcoming-events-icon"></i>
                                     </div>
                                     <div className="align-self-center align-middle" style={{ paddingLeft: "8px" }}>
-                                        <p className="events-card-icon-text">
-                                            {"6:30 PM"}
+                                        <p className="upcoming-events-icon-text">
+                                            {props.time}
                                         </p>
                                     </div>
                                 </div>
                                 <div className="align-middle align-self-center" style={{ display: "flex", flex: "1" }}>
                                     <div className="align-self-center align-middle no-hover">
-                                        <i className="fas fa-map-marker-alt events-card-icon"></i>
+                                        <i className="fas fa-map-marker-alt upcoming-events-icon"></i>
                                     </div>
                                     <div className="align-self-center align-middle" style={{ paddingLeft: "8px" }}>
-                                        <p className="events-card-icon-text">
-                                            {"Lyceum, HUB"}
+                                        <p className="upcoming-events-icon-text">
+                                            {props.loc}
                                         </p>
                                     </div>
                                 </div>

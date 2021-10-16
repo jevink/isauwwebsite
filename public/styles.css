@@ -212,6 +212,13 @@ p {
 	transform: rotate(0deg);
 }  
 
+/* Removes shadow from bootstrap cards */
+.card {
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: 0 2px 4px 0 rgba(0,0,0,0.16);
+}
+
 /* Preloader */
 #preloader {
 	position: fixed;
@@ -309,16 +316,30 @@ div:not(.slick-disabled):not(.no-hover)>i:hover {
 	display: none;
 }
 
-
-
-.card {
-	-webkit-box-shadow: none;
-	-moz-box-shadow: none;
-	box-shadow: 0 2px 4px 0 rgba(0,0,0,0.16);
-}
-
-
 /* Upcoming Events */
+.upcoming-events-overlay {
+    position:relative;
+}
+.upcoming-events-overlay:before {
+	border-radius: 16px;
+    content: '';
+    position: absolute;
+    top:0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,1) 95%);
+    z-index: 1;
+}
+.upcoming-events-content {
+	padding: 1rem 0;
+	width: 100%;
+	color: white;
+	bottom: 0;
+	left: 0;
+	position: absolute;
+	z-index: 1;
+}
 .upcoming-events-month {
 	font-size: calc(12px + 0.4vw);
 	font-weight: 500;
@@ -330,61 +351,37 @@ div:not(.slick-disabled):not(.no-hover)>i:hover {
 	font-weight: 900;
 	margin-bottom: 0;
 }
-.div-overlay {
-	padding: 1rem 0;
-	width: 100%;
-	color: white;
-	bottom: 0;
-	left: 0;
-	position: absolute;
-	z-index: 1;
-}
-.div-events-card-date {
+.div-upcoming-events-date {
 	padding-right: 12px;
 	margin: auto 0;
 	float: left;
 	width: 25% 
 }
-.div-events-card-content {
+.div-upcoming-events-content {
 	padding: 0px 0px 0px 12px;
 	box-shadow: -1px 0 0 white;
 	float: left;
 	width: 75%
 }
-.events-card-icon {
+.upcoming-events-icon {
 	font-size: calc(10px + 0.4vw);
 	width: calc(12px + 0.4vw) 
 }
-.events-card-icon-text {
+.upcoming-events-icon-text {
 	font-size: calc(14px + 0.1vw); 
 	font-weight: 300;
 	color: #7F7F7F;
 	margin: 0
 }
-.div-gradient {
-    position:relative;
-}
-
-.div-gradient:before {
-	border-radius: 16px;
-    content: '';
-    position: absolute;
-    top:0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,1) 95%);
-    z-index: 1;
-}
 /* Decreases left margin of the date when there is only 1 card in carousel*/
 @media only screen and (max-width: 576px) {
-	.div-events-card-date {
+	.div-upcoming-events-date {
 		width: calc(6vw + 36px);
 	}
 } 
 
 /* Both Events */ 
-.events-card-title {
+.events-title {
 	font-weight: 700;
 	font-size: calc(12px + 0.6vw);
 	margin-bottom: 8px;
@@ -392,18 +389,18 @@ div:not(.slick-disabled):not(.no-hover)>i:hover {
 }
 
 /* Past Events */
-.past-events-title {
+.h1-past-events {
 	padding: 1rem calc(0.4vw + 14px) 0;
 	margin-bottom: 0;
 }
-.events-card-date {
+.past-events-date {
 	font-size: calc(10px + 0.3vw);
 	font-weight: 300;
 	color: #7F7F7F;
 	margin: 0;
 	letter-spacing: 0.8px; 
 }
-.events-card-text {
+.past-events-text {
 	color: #747373;
 	font-weight: 300;
 	font-size: calc(12px + 0.3vw);
@@ -417,7 +414,7 @@ div:not(.slick-disabled):not(.no-hover)>i:hover {
 	padding: calc(0.8vw + 8px) calc(0.8vw + 8px) 0;
 }
 @media only screen and (max-width: 992px) {
-	.past-events-title {
+	.h1-past-events {
 		padding-left: 0;
 	}
 	.past-events-content {

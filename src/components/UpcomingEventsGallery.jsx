@@ -59,11 +59,11 @@ function UpcomingEventsGallery() {
                     <h1 className="my-3" style={{ paddingLeft: `calc(0.4vw + 1.5px)` }}><strong>Upcoming Events</strong></h1>
                     {/* Past Events */}
                     <Slider {...settings}>
-                        <UpcomingEventsCard month="JAN" date="01" title="KERATON" img="https://picsum.photos/2000" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel turpis ac est eleifend imperdiet." />
-                        <UpcomingEventsCard month="JAN" date="02" title="KERATON" img="https://picsum.photos/1800" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel turpis ac est eleifend imperdiet." />
-                        <UpcomingEventsCard month="JAN" date="03" title="KERATON" img="https://picsum.photos/1600" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel turpis ac est eleifend imperdiet." />
-                        <UpcomingEventsCard month="JAN" date="04" title="KERATON" img="https://picsum.photos/1400" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel turpis ac est eleifend imperdiet." />
-                        <UpcomingEventsCard month="JAN" date="05" title="KERATON" img="https://picsum.photos/1200" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit." />
+                        <UpcomingEventsCard title="KERATON" month="JAN" date="01" time="6:30PM" loc="Lyceum, HUB" img="https://picsum.photos/2000" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel turpis ac est eleifend imperdiet." />
+                        <UpcomingEventsCard title="KERATON" month="JAN" date="02" time="6:30PM" loc="Lyceum, HUB" img="https://picsum.photos/1800" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel turpis ac est eleifend imperdiet." />
+                        <UpcomingEventsCard title="KERATON" month="JAN" date="03" time="6:30PM" loc="Lyceum, HUB" img="https://picsum.photos/1600" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel turpis ac est eleifend imperdiet." />
+                        <UpcomingEventsCard title="KERATON" month="JAN" date="04" time="6:30PM" loc="Lyceum, HUB" img="https://picsum.photos/1400" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel turpis ac est eleifend imperdiet." />
+                        <UpcomingEventsCard title="KERATON" month="JAN" date="05" time="6:30PM" loc="Lyceum, HUB" img="https://picsum.photos/1200" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit." />
                     </Slider>
                 </div>
             </div>
