@@ -1,0 +1,54 @@
+[
+    {
+        "content": [
+            {
+                "position": "President",
+                "name": "Amy Dharmawan",
+                "img": "https://cdn.contrastly.com/wp-content/themes/contrastly-v9/images/anthropics-portraitpro.png"
+            },
+            {
+                "position": "Vice President",
+                "name": "Jasmine Laksmana",
+                "img": "https://assets.grooveapps.com/images/5fff4a731d2cfa006f386042/1624073591_Professional-Headshots-Portraits-by-Jared-Wolfe-Alexandria-VA-Portrait-Studio-Testimonial-01.png"
+            }
+        ]
+    },
+    {
+        "content": [
+            {
+                "position": "Director of Communications & Outreach",
+                "name": "Tung Alta",
+                "img": "https://assets.grooveapps.com/images/5fff4a731d2cfa006f386042/1624073591_Professional-Headshots-Portraits-by-Jared-Wolfe-Alexandria-VA-Portrait-Studio-Testimonial-01.png"
+            },
+            {
+                "position": "Director of Finance",
+                "name": "Natasha Valerie",
+                "img": "https://assets.grooveapps.com/images/5fff4a731d2cfa006f386042/1624073591_Professional-Headshots-Portraits-by-Jared-Wolfe-Alexandria-VA-Portrait-Studio-Testimonial-01.png"
+            },
+            {
+                "position": "Director of Operations",
+                "name": "Kevin Yip",
+                "img": "https://assets.grooveapps.com/images/5fff4a731d2cfa006f386042/1624073591_Professional-Headshots-Portraits-by-Jared-Wolfe-Alexandria-VA-Portrait-Studio-Testimonial-01.png"
+            }
+        ]
+    },
+    {
+        "content": [
+            {
+                "position": "Head of Information Technology",
+                "name": "Jevin Kosasih",
+                "img": "https://assets.grooveapps.com/images/5fff4a731d2cfa006f386042/1624073591_Professional-Headshots-Portraits-by-Jared-Wolfe-Alexandria-VA-Portrait-Studio-Testimonial-01.png"
+            },
+            {
+                "position": "Information Technology",
+                "name": "Ivanna Maxwell",
+                "img": "https://assets.grooveapps.com/images/5fff4a731d2cfa006f386042/1624073591_Professional-Headshots-Portraits-by-Jared-Wolfe-Alexandria-VA-Portrait-Studio-Testimonial-01.png"
+            },
+            {
+                "position": "Information Technology",
+                "name": "Winston Jodjana",
+                "img": "https://assets.grooveapps.com/images/5fff4a731d2cfa006f386042/1624073591_Professional-Headshots-Portraits-by-Jared-Wolfe-Alexandria-VA-Portrait-Studio-Testimonial-01.png"
+            }
+        ]
+    }
+]
