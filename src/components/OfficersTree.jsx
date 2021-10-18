@@ -21,7 +21,7 @@ function OfficersTree() {
                                 )
                             })}
                         </Row>
-                        <Row xs={3} className="justify-content-center" style={{ display: "flex" }}>
+                        <Row xs={3} className="justify-content-center" style={{ display: "flex", marginBottom: "50px" }}>
                             {row.content.map((officer, j) => {
                                 return (
                                     <Col style={{ alignSelf: "flex-start" }}>

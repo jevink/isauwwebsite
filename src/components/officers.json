@@ -4,7 +4,7 @@
             {
                 "position": "President",
                 "name": "Amy Dharmawan",
-                "img": "https://cdn.contrastly.com/wp-content/themes/contrastly-v9/images/anthropics-portraitpro.png"
+                "img": "https://assets.grooveapps.com/images/5fff4a731d2cfa006f386042/1624073591_Professional-Headshots-Portraits-by-Jared-Wolfe-Alexandria-VA-Portrait-Studio-Testimonial-01.png"
             },
             {
                 "position": "Vice President",
@@ -35,6 +35,25 @@
     {
         "content": [
             {
+                "position": "Head of Design and Documentation",
+                "name": "Andrea Muljono",
+                "img": "https://assets.grooveapps.com/images/5fff4a731d2cfa006f386042/1624073591_Professional-Headshots-Portraits-by-Jared-Wolfe-Alexandria-VA-Portrait-Studio-Testimonial-01.png"
+            },
+            {
+                "position": "Design and Documentation",
+                "name": "_",
+                "img": "https://assets.grooveapps.com/images/5fff4a731d2cfa006f386042/1624073591_Professional-Headshots-Portraits-by-Jared-Wolfe-Alexandria-VA-Portrait-Studio-Testimonial-01.png"
+            },
+            {
+                "position": "Design and Documentation",
+                "name": "_",
+                "img": "https://assets.grooveapps.com/images/5fff4a731d2cfa006f386042/1624073591_Professional-Headshots-Portraits-by-Jared-Wolfe-Alexandria-VA-Portrait-Studio-Testimonial-01.png"
+            }
+        ]
+    },
+    {
+        "content": [
+            {
                 "position": "Head of Information Technology",
                 "name": "Jevin Kosasih",
                 "img": "https://assets.grooveapps.com/images/5fff4a731d2cfa006f386042/1624073591_Professional-Headshots-Portraits-by-Jared-Wolfe-Alexandria-VA-Portrait-Studio-Testimonial-01.png"
@@ -47,6 +66,75 @@
             {
                 "position": "Information Technology",
                 "name": "Winston Jodjana",
+                "img": "https://assets.grooveapps.com/images/5fff4a731d2cfa006f386042/1624073591_Professional-Headshots-Portraits-by-Jared-Wolfe-Alexandria-VA-Portrait-Studio-Testimonial-01.png"
+            }
+        ]
+    },
+    {
+        "content": [
+            {
+                "position": "Head of Marketing Communication",
+                "name": "Ernesto Giovanni",
+                "img": "https://assets.grooveapps.com/images/5fff4a731d2cfa006f386042/1624073591_Professional-Headshots-Portraits-by-Jared-Wolfe-Alexandria-VA-Portrait-Studio-Testimonial-01.png"
+            }
+        ]
+    },
+    {
+        "content": [
+            {
+                "position": "Head of Sponsorship",
+                "name": "Nicole Fendi",
+                "img": "https://assets.grooveapps.com/images/5fff4a731d2cfa006f386042/1624073591_Professional-Headshots-Portraits-by-Jared-Wolfe-Alexandria-VA-Portrait-Studio-Testimonial-01.png"
+            },
+            {
+                "position": "Sponsorship",
+                "name": "Jordan Huang",
+                "img": "https://assets.grooveapps.com/images/5fff4a731d2cfa006f386042/1624073591_Professional-Headshots-Portraits-by-Jared-Wolfe-Alexandria-VA-Portrait-Studio-Testimonial-01.png"
+            }
+        ]
+    },
+    {
+        "content": [
+            {
+                "position": "Head of Treasury",
+                "name": "Vanessa Sujitro",
+                "img": "https://assets.grooveapps.com/images/5fff4a731d2cfa006f386042/1624073591_Professional-Headshots-Portraits-by-Jared-Wolfe-Alexandria-VA-Portrait-Studio-Testimonial-01.png"
+            },
+            {
+                "position": "Treasury",
+                "name": "Daven Tejalaksana",
+                "img": "https://assets.grooveapps.com/images/5fff4a731d2cfa006f386042/1624073591_Professional-Headshots-Portraits-by-Jared-Wolfe-Alexandria-VA-Portrait-Studio-Testimonial-01.png"
+            }
+        ]
+    },
+    {
+        "content": [
+            {
+                "position": "Head of Creativity Management",
+                "name": "Alyssa Limit",
+                "img": "https://assets.grooveapps.com/images/5fff4a731d2cfa006f386042/1624073591_Professional-Headshots-Portraits-by-Jared-Wolfe-Alexandria-VA-Portrait-Studio-Testimonial-01.png"
+            }
+        ]
+    },
+    {
+        "content": [
+            {
+                "position": "Head of Event Organization",
+                "name": "Nicole Fendi",
+                "img": "https://assets.grooveapps.com/images/5fff4a731d2cfa006f386042/1624073591_Professional-Headshots-Portraits-by-Jared-Wolfe-Alexandria-VA-Portrait-Studio-Testimonial-01.png"
+            },
+            {
+                "position": "Treasury",
+                "name": "Michelle Utama",
+                "img": "https://assets.grooveapps.com/images/5fff4a731d2cfa006f386042/1624073591_Professional-Headshots-Portraits-by-Jared-Wolfe-Alexandria-VA-Portrait-Studio-Testimonial-01.png"
+            }
+        ]
+    },
+    {
+        "content": [
+            {
+                "position": "Head of Inventory",
+                "name": "Glenndi Tjuandi",
                 "img": "https://assets.grooveapps.com/images/5fff4a731d2cfa006f386042/1624073591_Professional-Headshots-Portraits-by-Jared-Wolfe-Alexandria-VA-Portrait-Studio-Testimonial-01.png"
             }
         ]
