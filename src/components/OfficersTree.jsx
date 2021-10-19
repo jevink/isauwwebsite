@@ -1,13 +1,12 @@
-import React from "react";
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
-import Officers from './officers.json'
+import officers from '../data/officers.json'
 
 function OfficersTree() {
 
     return (
         <div>
-            {Officers.map((row, i) => {
+            {officers.map((row, i) => {
                 return (
                     <div>
                         <Row xs={3} className="justify-content-center" style={{ display: "flex" }}>

@@ -1,4 +1,3 @@
-import React from "react";
 import AboutUs from "./AboutUs";
 import Container from 'react-bootstrap/Container'
 import OfficersTree from "./OfficersTree";
