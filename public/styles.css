@@ -219,7 +219,7 @@ p {
 	box-shadow: none;
 }
 
-/* Ivanna insists I change the carousel text fadeInDown animation */
+/* small changes to the carousel text fadeInDown animation from mdb */
 .animated {
 	-webkit-animation-duration: 1s;
 	animation-duration: 1s;
