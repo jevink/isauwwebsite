@@ -12,6 +12,7 @@ import Shop from './Shop';
 import About from './About';
 import Keraton from './Keraton';
 import Sponsors from './Sponsors';
+import Apply from './Apply';
 import Footer from './Footer';
 import ScrollToTop from './ScrollToTop';
 import SocialLinks from './SocialLinks';
@@ -118,6 +119,7 @@ function App() {
                                     <NavLink to="/about" className={`navLink navLink-fade-up`} exact activeClassName="navLinkActive" onClick={() => { setExpanded(false); setKeratonPage(false) }}>About</NavLink>
                                     <NavLink to="/shop" className={`navLink navLink-fade-up`} exact activeClassName="navLinkActive" onClick={() => { setExpanded(false); setKeratonPage(false) }}>Shop</NavLink>
                                     <NavLink to="/keraton" className={`navLink navLink-fade-up`} exact activeClassName="navLinkActive" onClick={() => { setExpanded(false); setKeratonPage(true) }}>Keraton</NavLink>
+                                    <NavLink to="/apply" className={`navLink navLink-fade-up`} exact activeClassName="navLinkActive" onClick={() => { setExpanded(false); setKeratonPage(false) }}>Apply</NavLink>
                                     {/* <NavLink to="/sponsors" className="navLink" exact activeClassName="navLinkActive" onClick={() => setExpanded(false)}>Sponsors</NavLink> */}
                                 </Nav>
                                 {expanded ? <SocialLinks /> : null}
@@ -133,6 +135,7 @@ function App() {
                     <Route path="/shop" component={Shop} />
                     <Route path="/keraton" component={Keraton} />
                     <Route path="/sponsors" component={Sponsors} />
+                    <Route path="/apply" component={Apply} />
                 </Switch>
 
                 {/* {renderPopUp()} */}
