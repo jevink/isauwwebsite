@@ -1,6 +1,5 @@
 import React, {useEffect, useState, useMemo} from 'react';
 import Form from 'react-bootstrap/Form';
-import FormHelper from './FormHelper';
 import Container from 'react-bootstrap/Container';
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
@@ -8,6 +7,7 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Spinner from 'react-bootstrap/Spinner';
 
+import FormHelper from '../Shared/FormHelper';
 import PositionDescriptions from './PositionDescriptions';
 
 function Apply() {
@@ -22,12 +22,14 @@ function Apply() {
   const positionOptions = useMemo(() => [
     {value: "default", text: "Select your preferred position"},
     {value: "EO", text: "Event Organization"},
-    {value: "Inventory", text: "Inventory & Logistics"},
     {value: "CM", text: "Creativity Management"},
-    {value: "Sponsorship", text: "Sponsorship"},
+    {value: "Inventory", text: "Inventory"},
     {value: "Treasury", text: "Treasury"},
+    {value: "Fundraising", text: "Fundraising"},
+    {value: "Sponsorship", text: "Sponsorship"},
     {value: "MarCom", text: "Marketing Communication"},
-    {value: "Design", text: "Documentation & Design"},
+    {value: "Design", text: "Design"},
+    {value: "Documentation", text: "Documentation"},
     {value: "WebDev", text: "Web Development"},
   ], []);
 
@@ -64,6 +66,7 @@ function Apply() {
         document.getElementById("fakeResume").style.backgroundSize = `calc(0.75em + 0.375rem) calc(0.75em + 0.375rem)`;
         document.getElementById("fakeResume").style.backgroundRepeat = `no-repeat`;
         document.getElementById("fakeResume").style.borderColor = color;
+        document.getElementById("fakeResume").style.textAlign = `left`;
         document.getElementById("fakeResumeText").style.color = color;
       }
     }
@@ -84,7 +87,7 @@ function Apply() {
     set.add(appContent.secondChoice);
     set.add(appContent.thirdChoice);
 
-    if (set.has("CM") || set.has("Design")) {
+    if (set.has("CM") || set.has("Design") || set.has("Documentation")) {
       setShowPortfolio(true);
     } else {
       setShowPortfolio(false);
@@ -165,7 +168,9 @@ function Apply() {
       document.getElementById("fakeResume").style.backgroundPosition = `right 0.75rem center,center right 2.25rem`;
       document.getElementById("fakeResume").style.backgroundRepeat = `no-repeat`;
       document.getElementById("fakeResume").style.borderColor = color;
+      document.getElementById("fakeResume").style.textAlign = `left`;
       document.getElementById("fakeResumeText").style.color = color;
+      
     }
   }, [validated]);
 
@@ -193,7 +198,7 @@ function Apply() {
                 Selected applicants will be contacted for an interview.
               </p>
               <p style={{fontSize: "14px"}}>
-                Reach out to us on Instagram @isauwhuskies or email us at isauw@uw.edu for any questions.
+                Reach out on Instagram @isauwhuskies or email us at isauw@uw.edu for any questions.
               </p>
               <p style={{fontSize: "14px"}}><strong style={{fontSize: "14px"}}>Requirement:</strong> Currently enrolled as a UW student.</p>
             </div>
@@ -220,18 +225,18 @@ function Apply() {
                 <div>
                   <Row>
                     <Row>
-                      <Col xs={4}>
+                      <Col xs={7} sm={6} md={5} lg={4}>
                         <label id="fakeResume" class="btn" for="resume" style={{fontSize: "14px", fontWeight: "300", textTransform: "none", margin: "0", width: "100%", boxShadow: "none", border: "1px solid #ced4da"}}>
                           Upload Resume
                           <FormHelper name="resume" type="file" accept=".doc,.docx,application/pdf" handleChange={handleFile} />
                         </label>
                       </Col>
-                      <Col className="col-md-auto" style={{margin: "auto 0", padding: "0"}}>
+                      <Col xs={5} sm={6} md={7} lg={8} style={{margin: "auto 0", padding: "0", overflow: "hidden", textOverflow: "ellipsis"}}>
                         <span id="fakeResumeText" style={{fontSize: "14px"}}>{resumeFile ? resumeFile.name : "No file selected."}</span>
                       </Col>
                     </Row>
                     <Row>
-                      <Col xs={4}>
+                      <Col xs={7} sm={6} md={5} lg={4}>
                         <p style={{fontSize: "12px", margin: "8px 0 0", padding: "0", textAlign: "center"}}>DOC, DOCX, PDF</p>
                       </Col>
                     </Row>
@@ -249,17 +254,17 @@ function Apply() {
 
                 {showPortfolio &&
                   <span style={{color: "rgba(129, 27, 20, 1.0)"}}>
-                    You have indicated that you are applying for the position of Creativity Management and/or Documentation & Design.
-                    Please be sure to bring your portfolio should you be contacted for an intervew.
+                    You have indicated that you are applying to at least one of the following positions: Creativity Management, Documentation or Design.
+                    Please be sure to bring your portfolio should you be contacted for an interview.
                   </span>
                 }
               </section>
 
               <section className="my-3" >
                 <h1><strong style={{fontSize: `calc(0.8vw + 20px)`}}>More About You</strong></h1>
-                <FormHelper name="strengthsWeaknesses" label="What are your strengths and weaknesses? 2 each and why." type="textarea" rows="5" handleChange={handleChange} />
-                <FormHelper name="pastExperiences" label="What past experiences could you bring to ISAUW?" type="textarea" rows="5" handleChange={handleChange} />
-                <FormHelper name="whyISAUW" label="Why do you want to join ISAUW?" type="textarea" rows="5" handleChange={handleChange} />
+                <FormHelper name="strengthsWeaknesses" label="What are your strengths and weaknesses? 2 each and why." type="textarea" rows="10" handleChange={handleChange} />
+                <FormHelper name="pastExperiences" label="What past experiences could you bring to ISAUW?" type="textarea" rows="10" handleChange={handleChange} />
+                <FormHelper name="whyISAUW" label="Why do you want to join ISAUW?" type="textarea" rows="10" handleChange={handleChange} />
               </section>
 
               <button type="submit" className="btn btn-dark" style={{width: "60%", textTransform: "none", fontSize: `calc(14px + 0.1vw)`, fontWeight: "600", height: "50px", alignSelf: "center"}}>
@@ -277,15 +282,15 @@ function Apply() {
           centered
           size="lg"
         >
-          {/* redirects to home ("/") within 5 seconds of the modal rendering */}
-          <meta http-equiv="refresh" content="5;url=/" />
+          {/* redirects to home ("/") within 10 seconds of the modal rendering */}
+          <meta http-equiv="refresh" content="10;url=/" />
           <Modal.Header>
             <Modal.Title>We appreciate your time.</Modal.Title>
           </Modal.Header>
           <Modal.Body>
             Thank you for applying. We will get back to you regarding the status of your application.
             <br />
-            You will be automatically redirected to the home page in 5 seconds.
+            You will be automatically redirected to the home page in 10 seconds.
           </Modal.Body>
           <Modal.Footer>
             <Button variant="primary" href="/" style={{textTransform: "none"}}>Back to Home</Button>

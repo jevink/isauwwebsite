@@ -1,6 +1,6 @@
 import Form from 'react-bootstrap/Form';
 import FloatingLabel from 'react-bootstrap/FloatingLabel'
-import {formatPhoneNumber} from './Shop/shopTools';
+import {formatPhoneNumber} from '../Shop/shopTools';
 
 function FormHelper(props) {
   const {type, label, name, datatype, options, value, accept, rows, handleChange, feedback, pattern} = props;
@@ -37,7 +37,7 @@ function FormHelper(props) {
         return (
           <Form.Group>
             <Form.Label>{label}</Form.Label>
-            <Form.Control as="textarea" name={name} onChange={(e) => handleChange(e)} rows={rows} required />
+            <Form.Control style={{fontSize: "14px"}} as="textarea" name={name} onChange={(e) => handleChange(e)} rows={rows} required />
           </Form.Group>
         )
       default:
