@@ -3,7 +3,6 @@ import {BrowserRouter, Route, Switch, NavLink, Link} from 'react-router-dom'
 import Container from 'react-bootstrap/Container'
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-// import Alert from 'react-bootstrap/Alert'
 
 import Home from './Home/Home';
 import Events from './Events/Events';
@@ -13,7 +12,7 @@ import Keraton from './Keraton/Keraton';
 import Footer from './Footer';
 import ScrollToTop from './ScrollToTop';
 import SocialLinks from './SocialLinks';
-import Apply from './Apply';
+import Apply from './Apply/Apply';
 
 function App() {
   const [expanded, setExpanded] = useState(false);
@@ -124,7 +123,7 @@ function App() {
                   <NavLink to="/about" className={`navLink navLink-fade-up`} exact activeClassName="navLinkActive" onClick={() => {setExpanded(false); setKeratonPage(false)}}>About</NavLink>
                   <NavLink to="/shop" className={`navLink navLink-fade-up`} exact activeClassName="navLinkActive" onClick={() => {setExpanded(false); setKeratonPage(false)}}>Shop</NavLink>
                   <NavLink to="/keraton" className={`navLink navLink-fade-up`} exact activeClassName="navLinkActive" onClick={() => {setExpanded(false); setKeratonPage(true)}}>Keraton</NavLink>
-                  <NavLink to="/apply" className={`navLink navLink-fade-up`} exact activeClassName="navLinkActive" onClick={() => {setExpanded(false); setKeratonPage(false)}}>Apply</NavLink>
+                  {/* <NavLink to="/apply" className={`navLink navLink-fade-up`} exact activeClassName="navLinkActive" onClick={() => {setExpanded(false); setKeratonPage(false)}}>Apply</NavLink> */}
                 </Nav>
                 {expanded && <SocialLinks />}
               </Navbar.Collapse>
@@ -138,7 +137,7 @@ function App() {
           <Route path="/about" component={About} />
           <Route path="/shop" component={Shop} />
           <Route path="/keraton" component={Keraton} />
-          <Route path="/apply" component={Apply} />
+          {/* <Route path="/apply" component={Apply} /> */}
         </Switch>
 
         {/* {renderPopUp()} */}
